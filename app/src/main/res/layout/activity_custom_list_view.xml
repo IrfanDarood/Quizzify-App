@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#123456"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".CustomListView">
+
+    <TextView
+        android:id="@+id/quizque"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#F6F0F0"
+        android:textColorHint="#F5F0F0"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/quizcrtop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#4FCF36"
+        android:textColorHint="#F5F0F0" />
+
+    <TextView
+        android:id="@+id/quizincrtop1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#B13A3A"
+        android:textColorHint="#F5F0F0" />
+
+    <TextView
+        android:id="@+id/quizincrtop2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#B13A3A"
+        android:textColorHint="#F5F0F0" />
+
+    <TextView
+        android:id="@+id/quizincrtop3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#B13A3A"
+        android:textColorHint="#F5F0F0" />
+</LinearLayout>

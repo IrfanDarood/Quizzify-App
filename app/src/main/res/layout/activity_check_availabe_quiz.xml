@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gra5"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/messageincheckavail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="TextView"
+        android:textColor="#F6F0F0"
+        android:textColorHint="#F5F0F0"
+
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="TextView"
+        android:textColor="#F6F0F0"
+        android:textColorHint="#F5F0F0"
+
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/quizzes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5A8E98"
+        android:cacheColorHint="#E4C1C1"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp" />
+
+
+</LinearLayout>

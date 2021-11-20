@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/gra5"
+    tools:context=".CreateClassroom">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-95dp"
+        android:layout_marginBottom="95dp"
+        android:gravity="center"
+        android:text="CLASS ID :"
+        android:textColor="#F6F0F0"
+        android:textColorHint="#F6F2F2" />
+
+    <TextView
+        android:id="@+id/RoomId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-100dp"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        android:text="CLASS ID"
+        android:textColor="#F6F0F0"
+        android:textColorHint="#F5F0F0"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/QuizIdMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#F6F0F0"
+        android:textColorHint="#F5F0F0"
+        android:text="QUIZ ID :" />
+
+    <EditText
+        android:id="@+id/QuizIdEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter QuizID "
+        android:textColor="#F6F0F0"
+        android:textColorHint="#F5F0F0"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/QuizStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="-20dp"
+        android:padding="20dp"
+        android:text="start"
+        android:textColor="#F6F0F0"
+        android:textColorHint="#F5F0F0"
+        app:backgroundTint="#03A9F4" />
+</LinearLayout>

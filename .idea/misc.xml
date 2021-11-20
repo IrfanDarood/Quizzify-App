@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-anydpi/ic_action_name1.xml" value="0.2390625" />
+        <entry key="app/src/main/res/drawable-anydpi/ic_action_name11.xml" value="0.2390625" />
+        <entry key="app/src/main/res/drawable/ic_action_user1.xml" value="0.2390625" />
+        <entry key="app/src/main/res/layout/activity_check_availabe_quiz.xml" value="0.2625" />
+        <entry key="app/src/main/res/layout/activity_create_classroom.xml" value="0.2609375" />
+        <entry key="app/src/main/res/layout/activity_custom_list_view.xml" value="0.2625" />
+        <entry key="app/src/main/res/layout/activity_display_quiz_id.xml" value="0.2609375" />
+        <entry key="app/src/main/res/layout/activity_faculty_quiz_display.xml" value="0.2625" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.2609375" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2609375" />
+        <entry key="app/src/main/res/layout/activity_questions_entry.xml" value="0.2609375" />
+        <entry key="app/src/main/res/layout/activity_quiz_topic_select.xml" value="0.2625" />
+        <entry key="app/src/main/res/layout/activity_results_to_teacher.xml" value="0.253125" />
+        <entry key="app/src/main/res/layout/activity_scraping.xml" value="0.2609375" />
+        <entry key="app/src/main/res/layout/activity_show_result.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/activity_start_quiz.xml" value="0.4" />
+        <entry key="app/src/main/res/layout/activity_student_welcome.xml" value="0.2609375" />
+        <entry key="app/src/main/res/layout/activity_user_registration.xml" value="0.2609375" />
+        <entry key="app/src/main/res/layout/activity_wait_and_results.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.2609375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

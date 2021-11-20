@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/gra5"
+    tools:context=".ShowResult">
+
+    <TextView
+        android:id="@+id/resultsmessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Marks Obtained"
+        android:textColor="#EFEDED"
+        android:textColorHint="#F3ECEC"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/marks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Marks Obtained"
+        android:textColor="#F1EEEE"
+        android:textColorHint="#F1EEEE"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Thanks For Using Quizzify"
+        android:textColor="#ECE8E8"
+        android:textColorHint="#F4EFEF" />
+</LinearLayout>

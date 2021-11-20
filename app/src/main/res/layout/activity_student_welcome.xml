@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/gra5"
+    tools:context=".StudentWelcome">
+
+    <TextView
+        android:id="@+id/classroomidmessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Enter Room id"
+        android:textColor="#DCD4D4"
+        android:textColorHint="#E1DADA" />
+
+    <EditText
+        android:id="@+id/ClassroomId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter the Room ID"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textColor="#E6E0E0"
+        android:textColorHint="#ECE3E3" />
+
+    <Button
+        android:id="@+id/EnterClassroom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Join"
+        app:backgroundTint="#03A9F4" />
+</LinearLayout>

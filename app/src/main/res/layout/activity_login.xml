@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/gra5"
+    tools:context=".UserRegistration">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="240dp"
+        android:layout_height="216dp"
+        android:layout_marginTop="-80dp"
+        android:layout_marginBottom="80dp"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/emailid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_action_name11"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint=" Email"
+        android:textColor="#F6F0F0"
+        android:textColorHint="#F5F0F0"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:ems="10"
+        android:hint=" Password"
+        android:drawableLeft="@drawable/ic_action_name1"
+        android:textColor="#F6F0F0"
+        android:textColorHint="#F5F0F0"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/registeruser1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:textColor="#F6F0F0"
+        android:textColorHint="#F5F0F0"
+        app:backgroundTint="#03A9F4" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Register"
+        android:textColor="#F6F0F0"
+        android:textColorHint="#F5F0F0" />
+
+</LinearLayout>
