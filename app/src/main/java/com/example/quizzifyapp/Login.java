@@ -31,11 +31,13 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        //creating Database Instance variable.
         mAuth=FirebaseAuth.getInstance();
 
+        // Hooks
         email=(EditText)findViewById(R.id.emailid);
         pass=(EditText)findViewById(R.id.password);
-
         register=findViewById(R.id.register);
         register.setOnClickListener(this);
         loginbtn=(Button) findViewById(R.id.registeruser1);
@@ -53,6 +55,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         }
     }
     private void loginUser() {
+
+        //Reading the input text into string variables and performing form validations.
         String mail= email.getText().toString().trim();
         String pword=pass.getText().toString().trim();
         if(mail.isEmpty()){
@@ -65,39 +69,47 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             pass.requestFocus();
             return;
         }
+
+        //Signing into the firebase database using predefined method.
         mAuth.signInWithEmailAndPassword(mail,pword)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
-                    Toast.makeText(Login.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                    FirebaseUser user = mAuth.getCurrentUser();
-                    DatabaseReference db=FirebaseDatabase.getInstance().getReference().child("Users").child(user.getUid());
-                    db.addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot snapshot) {
-                            User u=snapshot.getValue(User.class);
-                            if(u.role.equals("Student")){
-                                finish();
-                                Intent intent=new Intent(Login.this,StudentWelcome.class).putExtra("userid",u.idno);
-                                startActivity(intent);
-                            }
-                            else{
-                                finish();
-                                startActivity(new Intent(Login.this,Welcome.class));
-                            }
-                        }
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful()){
 
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError error) {
+                    /*This will only execute when there is an entry with same login credentials in the database.
+                    i.e, the user has already registered.*/
 
+                            Toast.makeText(Login.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                            FirebaseUser user = mAuth.getCurrentUser();
+                            DatabaseReference db=FirebaseDatabase.getInstance().getReference().child("Users").child(user.getUid());
+                            db.addValueEventListener(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                    User u=snapshot.getValue(User.class);
+                                    if(u.role.equals("Student")){
+                                        // if a student logs in.
+                                        finish();
+                                        Intent intent=new Intent(Login.this,StudentWelcome.class).putExtra("userid",u.idno);
+                                        startActivity(intent);
+                                    }
+                                    else{
+                                        // if a faculty logs in.
+                                        finish();
+                                        startActivity(new Intent(Login.this,Welcome.class));
+                                    }
+                                }
+
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError error) {
+
+                                }
+                            });
                         }
-                    });
-                }
-                else{
-                    Toast.makeText(Login.this, "Invalid Email and password", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
+                        else{
+                            Toast.makeText(Login.this, "Invalid Email and password", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
     }
 }

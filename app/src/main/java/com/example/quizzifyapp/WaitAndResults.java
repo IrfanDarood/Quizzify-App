@@ -44,7 +44,7 @@ public class WaitAndResults extends AppCompatActivity {
             }
         });
         GetResults.setEnabled(false);
-        new CountDownTimer(600000,1000){
+        new CountDownTimer(120000,1000){
 
             @Override
             public void onTick(long l) {
